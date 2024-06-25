@@ -2,7 +2,7 @@
   "package": "ThreshColorPercent",
   "title": "Add colors to percents in Health bars",
   "description": "Threshold Color Health Bar Perecent Package for Mudlet",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "author": "Gesslar",
   "icon": "griffon-right.jpg",
   "dependencies": "",
