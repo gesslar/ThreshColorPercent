@@ -20,7 +20,7 @@ local function ColorPercent(number)
   elseif number >= 25 then
     result = percentages.percent25 .. tostring(number) .. "<reset>"
   else
-    result = percentages.percent0 .. number .. "<reset>"
+    result = percentages.percent0 .. tostring(number) .. "<reset>"
   end
 
   return result
