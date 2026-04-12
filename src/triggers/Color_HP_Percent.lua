@@ -1,21 +1,24 @@
 -- Change the Color Values Here to what you want
 local percentages = {
-  percent80 = "<green>",
+  percent90 = "<green>",
+  percent75 = "<yellow_green>",
   percent50 = "<yellow>",
-  percent30 = "<orange_red>",
-  percent0  = "<red>"
+  percent25 = "<orange_red>",
+  percent0  = "<brown>"
 }
 
--- Change the below if you know what you're doing.😁
+-- Change the below if you know what you're doing. 😁
 local function ColorPercent(number)
   local result = ""
 
-  if number > 80 then
-    result = percentages.percent80 .. tostring(number) .. "<reset>"
-  elseif number > 50 then
-    result = percentages.percent50.. tostring(number) .. "<reset>"
-  elseif number > 30 then
-    result = percentages.percent30 .. tostring(number) .. "<reset>"
+  if number >= 90 then
+    result = percentages.percent90 .. tostring(number) .. "<reset>"
+  elseif number >= 75 then
+    result = percentages.percent75 .. tostring(number) .. "<reset>"
+  elseif number >= 50 then
+    result = percentages.percent50 .. tostring(number) .. "<reset>"
+  elseif number >= 25 then
+    result = percentages.percent25 .. tostring(number) .. "<reset>"
   else
     result = percentages.percent0 .. number .. "<reset>"
   end
