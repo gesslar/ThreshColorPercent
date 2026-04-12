@@ -1,7 +1,11 @@
 {
-  "scripts": {
-    "build": "muddle",
-    "watch": "muddle -w"
+  "name": "threshcolorpercent",
+  "author": {
+    "name": "gesslar"
   },
-  "license": "Unlicense"
+  "scripts": {
+    "build": "npx -y @gesslar/muddy",
+    "watch": "npx -y @gesslar/muddy -w"
+  },
+  "license": "0BSD"
 }
